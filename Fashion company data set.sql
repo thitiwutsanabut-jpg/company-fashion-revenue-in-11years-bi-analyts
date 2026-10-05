@@ -43,15 +43,47 @@ select
    order by sum("revenue") desc
 
 ------------------------Which company has grown the fastest in the last 11 years?-------------------------
+with revenue_by_year as ( 
+   select 
+    "company_name",
+     CAST(RIGHT("years",4) AS INTEGER) AS Year,
+     "revenue",   
+  ROW_NUMBER() OVER (
+      PARTITION by "company_name"
+      ORDER BY CAST(RIGHT("years",4) AS INTEGER)
+      ) AS rn_first,
+  ROW_NUMBER() OVER (
+       PARTITION BY "company_name"
+       ORDER BY CAST(RIGHT("years",4) AS INTEGER) DESC 
+       ) AS rn_last 
+FROM fashion_company_data_set fcds
+),
+company_revenue as (
 select 
-  "company_name",
-  min("revenue") as first_revenue,
-  max("revenue") as last_revnenue,
-  Round(
-  ((max("revenue")-min("revenue"))::numeric/min("revenue"))* 100,2) as Growth_percentas
- from fashion_company_data_set fcds 
- group by "company_name"
- order by growth_percentas  desc
+    "company_name",
+    MAX(
+    case 
+    	when rn_first = 1 then "revenue"
+    end
+    ) as first_revenue,
+    max(
+    case 
+    	when rn_last = 1 then "revenue"
+    end
+    ) as last_revenue
+ from  revenue_by_year
+group by "company_name"
+)
+select 
+    "company_name",
+    "first_revenue",
+    "last_revenue",
+   Round((("last_revenue" - "first_revenue")::numeric
+   /nullif(first_revenue,0) 
+  ) * 100, 
+  2) as growth_percent
+from company_revenue
+order by "growth_percent" desc;
  
  --------------How has COVID-19 affected the fashion market?---------------------
  select 
