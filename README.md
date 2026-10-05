@@ -9,7 +9,7 @@ This project aims to analyze 11 years of historical revenue data for a fashion c
 
 ## 📈 3.Key Insights
 1. Nike consistently ranked first in annual revenue from 2012 to 2023, holding the highest revenue position across all 12 years in the dataset. <img width="1295" height="727" alt="revenue 11 y" src="https://github.com/user-attachments/assets/edffff8e-8e76-42c9-902f-655c0ad37d54" />
-2. The most popular fashion trend in the last 11 years : It's nike because product Being an athleisure product, it can be worn in any situation and offers greater flexibility in dressing.<img width="1295" height="732" alt="Fashion trend popularity" src="https://github.com/user-attachments/assets/59c90ea4-2ff7-4614-b405-abd4ee1a7170" />
+2.Company with the Highest Revenue Each Year (2012–2023) : Nike recorded the highest revenue in every year from 2012 to 2023, maintaining the top revenue position throughout the 12-year period.<img width="1295" height="732" alt="Fashion trend popularity" src="https://github.com/user-attachments/assets/59c90ea4-2ff7-4614-b405-abd4ee1a7170" />
 
 3. Which company has grown the fastest in the last 11 years : Lululemon This brand is growing rapidly because its products are unique and highly flexible, catering to both health-conscious individuals and fashionistas.<img width="751" height="362" alt="Screenshot 2026-06-21 212245" src="https://github.com/user-attachments/assets/64e5e7a1-5dce-4c72-a9f2-4d7fe50cfc03" />
 
