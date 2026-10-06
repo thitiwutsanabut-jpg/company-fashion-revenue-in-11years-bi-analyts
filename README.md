@@ -1,6 +1,6 @@
 Company Fashion Revenue in 12 Years (BI Analysis)
 ## 📌 1.Project Objective
-This project aims to analyze 12 years of historical revenue data for a fashion company in order to study growth trends, identify peak sales periods (seasonality), and analyze factors affecting revenue. The information will then be used to inform business decision-making and future strategic planning.
+This project aims to analyze 12 years of historical revenue data for a fashion company in order to study growth trends, identify revenue trends and changes over time, and analyze factors affecting revenue. The information will then be used to inform business decision-making and future strategic planning.
 
 ## 🛠️ 2. Tools & Tech Stack
 - **Business Intelligence & Visualization:** Power BI 
@@ -10,7 +10,7 @@ This project aims to analyze 12 years of historical revenue data for a fashion c
 ## 📈 3.Key Insights
 1. Company with the Highest Revenue Each Year (2012–2023)
 
-Nike recorded the highest revenue in every year from 2012 to 2023, maintaining the top revenue position throughout the 12-year period.. <img width="1295" height="727" alt="revenue 11 y" src="https://github.com/user-attachments/assets/edffff8e-8e76-42c9-902f-655c0ad37d54" />
+Nike recorded the highest revenue in every year from 2012 to 2023, maintaining the top revenue position throughout the 12-year period. <img width="1295" height="727" alt="revenue 11 y" src="https://github.com/user-attachments/assets/edffff8e-8e76-42c9-902f-655c0ad37d54" />
 
 2. Which Company Had the Highest Revenue Growth from 2012 to 2023?
 
