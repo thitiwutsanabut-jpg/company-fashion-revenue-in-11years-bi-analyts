@@ -16,6 +16,8 @@ This project aims to analyze 11 years of historical revenue data for a fashion c
 
 Most companies experienced a decline in revenue from 2019 to 2020. Lululemon recorded the highest revenue increase at 21.02%, followed by Bottega Veneta at 3.66%. Meanwhile, Zara experienced the largest revenue decline at 26.41%..<img width="1292" height="731" alt="Covid impact" src="https://github.com/user-attachments/assets/5ec26365-0afe-44ce-95f1-3e33ede02c80" />
 
-4. Is there a correlation between the number of branches and revenue : It has an impact because Nike has 1,118 physical stores and an online shop, making it the company with the highest sales in 11 years.<img width="1307" height="732" alt="Stores vs Revenue" src="https://github.com/user-attachments/assets/c164992b-abd1-464b-9125-a9fffdd42d18" />
+4. Is There a Correlation Between the Number of Branches and Revenue?
+
+The analysis found a positive correlation of 0.40 between the number of company-operated retail stores and revenue. This suggests that companies with more retail stores tend to have higher revenue, although the relationship is relatively moderate and does not imply causation..<img width="1307" height="732" alt="Stores vs Revenue" src="https://github.com/user-attachments/assets/c164992b-abd1-464b-9125-a9fffdd42d18" />
 
     
