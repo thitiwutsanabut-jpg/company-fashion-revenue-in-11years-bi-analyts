@@ -1,12 +1,30 @@
 ------all revenue for fashion company 11 year ----------------
 
-select 
-  "company_name",
-  SUM("revenue") as "total_revenue"
- from fashion_company_data_set fcds 
- group by "company_name"
- having SUM("revenue") >1
- order by "total_revenue" desc
+WITH yearly_revenue AS (
+    SELECT
+        "company_name",
+        RIGHT("years", 4)::INTEGER AS year,
+        "revenue"
+    FROM fashion_company_data_set
+),
+ranked_revenue AS (
+    SELECT
+        "company_name",
+        year,
+        revenue,
+        RANK() OVER (
+            PARTITION BY year
+            ORDER BY revenue DESC
+        ) AS revenue_rank
+    FROM yearly_revenue
+)
+SELECT
+    year,
+    "company_name",
+    revenue
+FROM ranked_revenue
+WHERE revenue_rank = 1
+ORDER BY year;
  
  ---------The company with the highest revenue each year.-------
  
@@ -86,42 +104,42 @@ from company_revenue
 order by "growth_percent" desc;
  
  --------------How has COVID-19 affected the fashion market?---------------------
- select 
-   "company_name",
-   max(case when years= 'company_revenue_2019' then "revenue" end) as rev_2019,
-   max(case when years= 'company_revenue_2020' then "revenue" end ) as rev_2020
-   from fashion_company_data_set fcds 
-   group by "company_name"
+WITH covid_revenue AS (
+    SELECT 
+        "company_name",
+        MAX(CASE 
+            WHEN "years" = 'company_revenue_2019' 
+            THEN "revenue" 
+        END) AS rev_2019,
+        MAX(CASE 
+            WHEN "years" = 'company_revenue_2020' 
+            THEN "revenue" 
+        END) AS rev_2020
+    FROM fashion_company_data_set
+    GROUP BY "company_name"
+)
+SELECT
+    "company_name",
+    rev_2019,
+    rev_2020,
+    ROUND(
+        ((rev_2020 - rev_2019)::numeric / NULLIF(rev_2019, 0)) * 100,
+        2
+    ) AS revenue_change_percent
+FROM covid_revenue
+ORDER BY revenue_change_percent DESC;
    
- --------------Does the company's age relate to income?-----------------------
- select 
-   "company_name",
-   2023-"founding_year" as company_age,
-   SUM("revenue") as all_rev
-  from fashion_company_data_set fcds 
-  group by "company_name",company_age
-  having SUM("revenue") >0
-  
- ----------------Is there a correlation between the number of branches and revenue?--------
+
+  ---------------Is there a correlation between the number of branches and revenue?--------
  
- select
-   distinct "company_name",
-   "company_operated_retail_stores",
-   SUM("revenue")
-  from fashion_company_data_set fcds
-  group by "company_name" , "company_operated_retail_stores"
-  having SUM("revenue") > 1
-  
-------------------Number of branches and sales figures-------------------------------------
  SELECT
-  "company_name",
-  ROUND(CAST(MAX("company_operated_retail_stores") AS NUMERIC), 0) AS max_stores,
-  ROUND(SUM("revenue") / NULLIF(CAST(MAX("company_operated_retail_stores") AS NUMERIC), 0), 2) AS revenue_per_store
-FROM "fashion_company_data_set"
-GROUP BY "company_name"
-HAVING SUM("revenue") > 0
-ORDER BY revenue_per_store DESC;
+    CORR(
+        "company_operated_retail_stores",
+        "revenue"
+    ) AS revenue_store_correlation
+FROM fashion_company_data_set;
   
+
   
   
    
