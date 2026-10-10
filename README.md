@@ -28,7 +28,7 @@ The dataset contains historical revenue data for 13 fashion companies from 2012 
 - **Data Preparation & Analysis:** SQL
 - **Dataset:** 12-year historical fashion company revenue dataset
 
-## 📈 5.Key Insights
+## 📈 5. Key Insights
 1. Company with the Highest Revenue Each Year (2012–2023)
 
 Nike recorded the highest revenue in every year from 2012 to 2023, maintaining the top revenue position throughout the 12-year period. <img width="1302" height="731" alt="image" src="https://github.com/user-attachments/assets/d767ad2c-ab31-4fde-85c3-60e74e58b873" />
@@ -42,7 +42,7 @@ Lululemon recorded the highest revenue growth among the companies analyzed, incr
 Most companies experienced a decline in revenue from 2019 to 2020. Lululemon recorded the highest revenue increase at 21.02%, followed by Bottega Veneta at 3.66%. Meanwhile, Zara experienced the largest revenue decline at 26.41%.<img width="1306" height="733" alt="image" src="https://github.com/user-attachments/assets/e61d5d30-342c-41b7-8591-a65a94062ae1" />
 
 
-4. Is There a Correlation Between the Number of Branches and Revenue?
+4. 4. Is There a Relationship Between Company-Operated Retail Store Count and Revenue?
 
 The analysis found a positive correlation of 0.40 between the number of company-operated retail stores and revenue. This suggests that companies with more retail stores tend to have higher revenue, although the relationship is moderate and does not imply causation.<img width="1303" height="734" alt="image" src="https://github.com/user-attachments/assets/4f940202-89fa-4d55-af55-f68ad6dce6e9" />
 
@@ -50,7 +50,7 @@ The analysis found a positive correlation of 0.40 between the number of company-
 ## 💡 6. Recommendations
 
 * **Focus on high-growth brands:** Lululemon recorded the highest revenue growth from 2012 to 2023, suggesting that its growth trajectory is worth further investigation and benchmarking.
-* **Review resilience during the COVID-19 period:** Lululemon and Bottega Veneta were the only companies in the dataset that increased revenue from 2019 to 2020. Their performance could be examined further to identify business characteristics associated with stronger revenue resilience.
+* **Review Resilience During the COVID-19 Period:** Lululemon and Bottega Veneta were the only companies in the dataset that increased revenue from 2019 to 2020. Further investigation into their business strategies and market conditions may help explain their revenue performance during this period.
 * **Evaluate retail expansion alongside other factors:** The positive correlation between company-operated retail stores and revenue (0.40) suggests a moderate relationship. Companies should consider store expansion together with other business factors rather than treating store count as a direct driver of revenue.
 
     
