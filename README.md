@@ -32,21 +32,22 @@ The dataset contains historical revenue data for 13 fashion companies from 2012 
 ## 📈 5. Key Insights
 1. Company with the Highest Revenue Each Year (2012–2023)
 
-Nike recorded the highest revenue in every year from 2012 to 2023, maintaining the top revenue position throughout the 12-year period. <img width="1302" height="731" alt="image" src="https://github.com/user-attachments/assets/d767ad2c-ab31-4fde-85c3-60e74e58b873" />
+Nike recorded the highest revenue in every year from 2012 to 2023, maintaining the top revenue position throughout the 12-year period. <img width="1437" height="808" alt="image" src="https://github.com/user-attachments/assets/0494815d-ee69-477c-a5cf-b384e24df473" />
+
 
 2. Which Company Had the Highest Revenue Growth from 2012 to 2023?
 
-Lululemon recorded the highest revenue growth among the companies analyzed, increasing from $1.001 billion in 2012 to $8.111 billion in 2023, representing a 710.29% increase.<img width="1297" height="732" alt="image" src="https://github.com/user-attachments/assets/1644221d-d6b4-40ce-8859-bd127052ae94" />
+Lululemon recorded the highest revenue growth among the companies analyzed, increasing from $1.001 billion in 2012 to $8.111 billion in 2023, representing a 710.29% increase.<img width="1435" height="799" alt="image" src="https://github.com/user-attachments/assets/0abd8984-c710-4d01-94be-c51c1a330be7" />
+
 
 3. How Did Fashion Company Revenue Change from 2019 to 2020?
 
-Most companies experienced a decline in revenue from 2019 to 2020. Lululemon recorded the highest revenue increase at 21.02%, followed by Bottega Veneta at 3.66%. Meanwhile, Zara experienced the largest revenue decline at 26.41%.<img width="1306" height="733" alt="image" src="https://github.com/user-attachments/assets/e61d5d30-342c-41b7-8591-a65a94062ae1" />
+Most companies experienced a decline in revenue from 2019 to 2020. Lululemon recorded the highest revenue increase at 21.02%, followed by Bottega Veneta at 3.66%. Meanwhile, Zara experienced the largest revenue decline at 26.41%.<img width="1436" height="810" alt="image" src="https://github.com/user-attachments/assets/6c110662-9c87-4d76-a46d-261ba4ce6e7a" />
 
 
 4. Is There an Association Between Company-Operated Retail Store Count and Revenue?
 
-The analysis found a positive correlation of 0.40 between the number of company-operated retail stores and revenue. This suggests that companies with more retail stores tend to have higher revenue, although the relationship is moderate and does not imply causation.<img width="1303" height="734" alt="image" src="https://github.com/user-attachments/assets/4f940202-89fa-4d55-af55-f68ad6dce6e9" />
-
+The analysis found a positive correlation of 0.40 between the number of company-operated retail stores and revenue. This suggests that companies with more retail stores tend to have higher revenue, although the relationship is moderate and does not imply causation.<img width="1431" height="803" alt="image" src="https://github.com/user-attachments/assets/27d22685-1877-4098-97db-5e0c9d84d57e" />
 
 ## 💡 6. Recommendations
 
