@@ -1,6 +1,6 @@
 Company Fashion Revenue in 12 Years (BI Analysis)
 ## 📌 1.Project Objective
-This project aims to analyze 12 years of historical revenue data for a fashion company in order to study growth trends, identify revenue trends and changes over time, and analyze factors affecting revenue. The information will then be used to inform business decision-making and future strategic planning.
+This project aims to analyze 12 years of historical revenue data from 13 fashion companies (2012–2023) to evaluate revenue growth, compare company performance, identify trends and changes over time, and explore the relationship between retail store count and revenue. The findings are intended to support data-driven business decision-making and strategic planning.
 
 ## 📂 2. Dataset Source & Description
 
@@ -10,19 +10,19 @@ This project aims to analyze 12 years of historical revenue data for a fashion c
 - **Dataset Author:** Toluwalope Osisiogu
 - **Time Period:** 2012–2023 (12 years)
 - **Coverage:** 13 fashion companies
-- **Key Variables:** Company name, annual revenue, and company-operated retail stores
+- **Key Variables:** Company name, annual revenue, and company-operated retail store count
 
-### Data Usage
-This dataset was used for an independent portfolio project to analyze historical revenue trends, compare company performance, calculate revenue growth rates, and explore the relationship between retail store count and revenue.
+### Dataset Overview
+The dataset contains historical revenue data for 13 fashion companies from 2012 to 2023. It is used to compare company performance, calculate revenue growth rates, identify historical trends, and explore the relationship between retail store count and revenue.
 
 ## ⚠️ 3. Data Limitations
 
-- The analysis covers 13 selected fashion companies and may not represent the entire fashion industry.
-- The analysis is based on the dataset available on Kaggle; the original data collection methodology and underlying sources should be verified before interpreting the figures as official company financial records.
-- Historical revenue growth does not guarantee future performance.
-- Correlation between retail store count and revenue does not establish causation.
-- Revenue changes between 2019 and 2020 show an observed trend but do not independently establish the impact of COVID-19.
-- 
+- **Limited Coverage:** The analysis covers 13 selected fashion companies and may not represent the entire fashion industry.
+- **Data Reliability:** The analysis uses a dataset published on Kaggle. The original data collection methodology and underlying sources have not been independently verified.
+- **Historical Performance:** Past revenue growth does not guarantee future performance.
+- **Correlation vs. Causation:** The relationship between retail store count and revenue does not establish a causal relationship.
+- **COVID-19 Context:** Revenue changes between 2019 and 2020 show observed trends but do not independently establish the impact of COVID-19.
+
 ## 🛠️ 4. Tools & Tech Stack
 - **Business Intelligence & Visualization:** Power BI 
 - **Data Preparation & Analysis:** SQL
