@@ -1,4 +1,4 @@
-------all revenue for fashion company 11 year ----------------
+------all revenue for fashion company 12 year ----------------
 
 WITH yearly_revenue AS (
     SELECT
@@ -26,7 +26,7 @@ FROM ranked_revenue
 WHERE revenue_rank = 1
 ORDER BY year;
  
- ---------The company with the highest revenue each year.-------
+ --------Company with the Highest Revenue Each Year (2012–2023)-------
  
  with ranked as (
  select 
@@ -45,7 +45,7 @@ ORDER BY year;
  where "rank" = 1
  order by "years" 
  
-   ---------------- The most popular fashion trend in the last 11 years.-----------------------
+   ---------------- The most popular fashion trend in the last 12 years.-----------------------
   
    select 
     "company_name",
@@ -60,7 +60,7 @@ ORDER BY year;
    having sum("revenue") > 40000000
    order by sum("revenue") desc
 
-------------------------Which company has grown the fastest in the last 11 years?-------------------------
+------------------------Which company has grown the fastest in the last 12 years?-------------------------
 with revenue_by_year as ( 
    select 
     "company_name",
