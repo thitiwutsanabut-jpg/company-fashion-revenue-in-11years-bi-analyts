@@ -37,7 +37,7 @@ Nike recorded the highest revenue in every year from 2012 to 2023, maintaining t
 
 Lululemon recorded the highest revenue growth among the companies analyzed, increasing from $1.001 billion in 2012 to $8.111 billion in 2023, representing a 710.29% increase.<img width="1297" height="732" alt="image" src="https://github.com/user-attachments/assets/1644221d-d6b4-40ce-8859-bd127052ae94" />
 
-3. How Did COVID-19 Affect Fashion Company Revenue?
+3.How Did Fashion Company Revenue Change from 2019 to 2020?
 
 Most companies experienced a decline in revenue from 2019 to 2020. Lululemon recorded the highest revenue increase at 21.02%, followed by Bottega Veneta at 3.66%. Meanwhile, Zara experienced the largest revenue decline at 26.41%.<img width="1306" height="733" alt="image" src="https://github.com/user-attachments/assets/e61d5d30-342c-41b7-8591-a65a94062ae1" />
 
